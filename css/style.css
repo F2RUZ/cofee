@@ -142,4 +142,28 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: 26px; /* 162.5% */
+}
+
+.cardsssss {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section__btn {
+  width: 120px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  background-color: black;
+  color: red;
+}
+
+.BTNs {
+  width: 120px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  background-color: black;
+  color: red;
 }/*# sourceMappingURL=style.css.map */

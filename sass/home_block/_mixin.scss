@@ -1,0 +1,15 @@
+@mixin Display {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+@mixin Btn {
+  width: 120px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  background-color: black;
+  color: red;
+}
