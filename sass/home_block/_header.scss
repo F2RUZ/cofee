@@ -1,10 +1,19 @@
-.header {
-}
-
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  &__burger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+  }
+  &__span {
+    width: 16px;
+    height: 5px;
+    flex-shrink: 0;
+    background-color: black;
+  }
   &__logo {
     width: 236px;
     height: 26px;
@@ -36,6 +45,17 @@
       line-height: 15px; /* 125% */
       letter-spacing: 0.923px;
       text-transform: uppercase;
+    }
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .navbar {
+    &__list {
+      display: none;
+    }
+    &__burger{
+      display: flex;
     }
   }
 }
