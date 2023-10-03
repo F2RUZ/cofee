@@ -1,20 +1,55 @@
-body {
-  padding: 100px;
-}
-
 .card {
-  width: 200px;
-  height: 300px;
-  background-color: red;
-  transition-property: all;
-  transition-duration: 2s;
-//   transition-delay: 2s;
-
-  transition-timing-function: cubic-bezier(8.47, 0, 0.745, 45.715);
+  margin: 200px auto;
+  width: 150px;
+  height: 150px;
+  border: 1px solid red;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(2, 18, 61);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 18, 61, 1) 0%,
+    rgba(36, 42, 96, 1) 100%,
+    rgba(185, 87, 133, 1) 100%,
+    rgba(166, 138, 35, 1) 100%,
+    rgba(14, 6, 84, 1) 100%,
+    rgba(13, 13, 154, 1) 100%
+  );
+  box-shadow: -14px -32px 90px 24px rgba(194, 32, 139, 0.75);
+  -webkit-box-shadow: -14px -32px 90px 24px rgba(194, 32, 139, 0.75);
+  -moz-box-shadow: -14px -32px 90px 24px rgba(194, 32, 139, 0.75);
+  animation-name: loader;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+.card1 {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 1px solid blue;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body {
+  padding: 150px;
 }
 
-.card:hover {
-  background-color: blue;
-  width: 500px;
-  height: 500px;
+.title {
+  animation-name: loader;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+@keyframes loader {
+  0% {
+    border: 3px solid red;
+    transform: rotate(-90deg);
+  }
+  100% {
+    border: 1px solid blue;
+    transform: rotate(90deg);
+  }
 }
